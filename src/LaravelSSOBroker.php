@@ -17,6 +17,19 @@ use GuzzleHttp;
 class LaravelSSOBroker extends SSOBroker
 {
     /**
+     * Overrides parent method to logout client from SSO server then deletes the sso cookie between the client
+     * and this broker.
+     *
+     * @return void
+     */
+    public function logout()
+    {
+        parent::logout();
+
+        $this->deleteToken();
+    }
+
+    /**
      * Generate request url.
      *
      * @param string $command
@@ -83,7 +96,7 @@ class LaravelSSOBroker extends SSOBroker
     protected function deleteToken()
     {
         $this->token = null;
-        Cookie::forget($this->getCookieName());
+        Cookie::queue(Cookie::forget($this->getCookieName()));
     }
 
     /**
