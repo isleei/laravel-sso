@@ -20,13 +20,13 @@
     },
     "autoload": {
       "psr-4": {
-        "RoastarInc\\LaravelSSO\\": "src/"
+        "Roastar\\LaravelSSO\\": "src/"
       }
     },
     "extra": {
       "laravel": {
         "providers": [
-            "RoastarInc\\LaravelSSO\\SSOServiceProvider"
+            "Roastar\\LaravelSSO\\SSOServiceProvider"
         ]
       }
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Zefy\LaravelSSO\Exceptions;
+namespace Roastar\LaravelSSO\Exceptions;
 
 use Exception;
 

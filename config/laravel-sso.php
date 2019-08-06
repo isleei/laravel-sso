@@ -24,9 +24,9 @@ return [
      */
 
     'usersModel' => \App\User::class,
-    'brokersModel' => Zefy\LaravelSSO\Models\Broker::class,
+    'brokersModel' => Roastar\LaravelSSO\Models\Broker::class,
 
-    // Table used in Zefy\LaravelSSO\Models\Broker model
+    // Table used in Roastar\LaravelSSO\Models\Broker model
     'brokersTable' => 'brokers',
 
     // What is the name of the column that users use to login with (generally 'username' or 'email)

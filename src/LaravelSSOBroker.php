@@ -1,9 +1,9 @@
 <?php
 
-namespace Zefy\LaravelSSO;
+namespace Roastar\LaravelSSO;
 
 use Illuminate\Support\Facades\Cookie;
-use Zefy\LaravelSSO\Exceptions\MissingConfigurationException;
+use Roastar\LaravelSSO\Exceptions\MissingConfigurationException;
 use Zefy\SimpleSSO\SSOBroker;
 use GuzzleHttp;
 

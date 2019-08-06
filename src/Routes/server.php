@@ -5,8 +5,8 @@
  */
 
 Route::middleware('api')->prefix('api/sso')->group(function () {
-    Route::post('login', 'Zefy\LaravelSSO\Controllers\ServerController@login');
-    Route::post('logout', 'Zefy\LaravelSSO\Controllers\ServerController@logout');
-    Route::match(['get', 'post'], 'attach', 'Zefy\LaravelSSO\Controllers\ServerController@attach');
-    Route::get('userInfo', 'Zefy\LaravelSSO\Controllers\ServerController@userInfo');
+    Route::post('login', 'Roastar\LaravelSSO\Controllers\ServerController@login');
+    Route::post('logout', 'Roastar\LaravelSSO\Controllers\ServerController@logout');
+    Route::match(['get', 'post'], 'attach', 'Roastar\LaravelSSO\Controllers\ServerController@attach');
+    Route::get('userInfo', 'Roastar\LaravelSSO\Controllers\ServerController@userInfo');
 });
