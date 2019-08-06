@@ -1,5 +1,5 @@
 {
-    "name": "zefy/laravel-sso",
+    "name": "roastar-inc/laravel-sso",
     "description": "Simple PHP SSO integration for Laravel",
     "keywords": ["laravel", "sso", "authentication", "login"],
     "homepage": "https://github.com/zefy/laravel-sso",
@@ -20,13 +20,13 @@
     },
     "autoload": {
       "psr-4": {
-        "Zefy\\LaravelSSO\\": "src/"
+        "RoastarInc\\LaravelSSO\\": "src/"
       }
     },
     "extra": {
       "laravel": {
         "providers": [
-            "Zefy\\LaravelSSO\\SSOServiceProvider"
+            "RoastarInc\\LaravelSSO\\SSOServiceProvider"
         ]
       }
     }
