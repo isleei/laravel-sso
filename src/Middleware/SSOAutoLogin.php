@@ -17,6 +17,10 @@ class SSOAutoLogin
      */
     public function handle(Request $request, Closure $next)
     {
+        if (! config('laravel-sso.sso_enabled')) {
+            return $next($request);
+        }
+
         $broker = new LaravelSSOBroker();
         $response = $broker->getUserInfo();
 

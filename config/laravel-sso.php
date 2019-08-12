@@ -47,6 +47,7 @@ return [
      |
      */
 
+    'sso_enabled' => env('SSO_ENABLED', true),
     'serverUrl' => env('SSO_SERVER_URL', null),
     'brokerName' => env('SSO_BROKER_NAME', null),
     'brokerSecret' => env('SSO_BROKER_SECRET', null),
